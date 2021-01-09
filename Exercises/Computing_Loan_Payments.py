@@ -3,7 +3,7 @@ def month_pay(rate, years, amount):
     a = amount * rate
     b = 1 - (1 / ((1 + rate) ** (years * 12)))
 
-    return print("£ {:.2f}".format(a // b))
+    return print(f'Your monthly loan payment is: £{a // b:.2f}')
 
 
 if __name__ == '__main__':
